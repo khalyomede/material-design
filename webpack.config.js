@@ -38,7 +38,8 @@ module.exports = {
     new CleanWebpackPlugin([
       resolve('dist')
     ], {
-      watch: true
+      watch: true,
+      beforeEmit: true
     })
   ]
 };
