@@ -31,7 +31,9 @@ module.exports = {
   },
   optimization: {
     minimizer: [
-      new UglifyjsWebpackPlugin()
+      new UglifyjsWebpackPlugin({
+        parallel: os.cpus().length - 1
+      })
     ]
   },
   plugins: [
