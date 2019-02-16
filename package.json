@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "@aminnairi/material-design",
   "version": "0.2.0",
   "description": "JavaScript & CSS implementation of the Material Design using Web Components",
   "main": "dist/material-design.js",
