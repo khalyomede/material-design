@@ -8,6 +8,9 @@
   "files": [
     "dist/material-design.js"
   ],
+  "bugs": {
+    "url": "https://github.com/aminnairi/material-design/issues/"
+  },
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack -p"
