@@ -37,6 +37,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([
       resolve('dist')
-    ])
+    ], {
+      watch: true
+    })
   ]
 };
