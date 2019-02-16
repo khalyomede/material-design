@@ -5,6 +5,9 @@
   "main": "dist/material-design.js",
   "browser": "dist/material-design.css",
   "homepage": "https://github.com/aminnairi/material-design#readme",
+  "files": [
+    "dist/material-design.js"
+  ],
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack -p"
