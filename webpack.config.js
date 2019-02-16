@@ -1,5 +1,6 @@
 'use strict';
 
+const { cpus } = require('os');
 const { resolve } = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
@@ -32,7 +33,7 @@ module.exports = {
   optimization: {
     minimizer: [
       new UglifyjsWebpackPlugin({
-        parallel: os.cpus().length - 1
+        parallel: cpus().length - 1
       })
     ]
   },
