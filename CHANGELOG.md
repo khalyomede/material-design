@@ -10,6 +10,7 @@
 - Added a code of conduct.
 - Added a contributing guildeline.
 - Added templates for pull request, issues & feature requests.
+- Added a new component for material chip.
 
 **0.1.0**
 - Initial release.
