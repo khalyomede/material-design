@@ -1,48 +1,33 @@
-'use strict';
+"use strict";
 
-const { cpus } = require('os');
-const { resolve } = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
+const { resolve } = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const UglifyjsWebpackPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-  mode: 'development',
-  entry: resolve('src', 'index.js'),
-  target: 'web',
-  output: {
-    filename: 'material-design.js',
-    path: resolve('dist')
-  },
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: [
-          'css-loader',
-          'sass-loader'
-        ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
-  },
-  optimization: {
-    minimizer: [
-      new UglifyjsWebpackPlugin({
-        parallel: cpus().length - 1
-      })
-    ]
-  },
-  plugins: [
-    new CleanWebpackPlugin([
-      resolve('dist')
-    ], {
-      watch: true,
-      beforeEmit: true
-    })
-  ]
+	mode: "development",
+	entry: resolve("src", "index.js"),
+	target: "web",
+	output: {
+		filename: "material-design.js",
+		path: resolve("dist")
+	},
+	module: {
+		rules: [
+			{
+				test: /\.(scss|sass)$/,
+				exclude: /node_modules/,
+				use: ["css-loader", "sass-loader"]
+			},
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: "babel-loader"
+			}
+		]
+	},
+	optimization: {
+		minimizer: [new UglifyjsWebpackPlugin()]
+	},
+	plugins: [new CleanWebpackPlugin([resolve("dist")])]
 };
