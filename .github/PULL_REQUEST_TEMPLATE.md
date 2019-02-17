@@ -1,14 +1,4 @@
----
-name: Pull request
-about: Create pull request to answer issues
-title: ''
-labels: enhancement
-assignees:
-projects: pull-requests/1
-
----
-
-This pull request will close issue #[IDENTIFIER]
+This pull request will close #[IDENTIFIER]
 
 **List of breaking changes:**
 - [x] ...
