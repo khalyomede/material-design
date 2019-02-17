@@ -26,7 +26,7 @@ export class MaterialInput extends HTMLElement {
 
     input.addEventListener('focus', () => {
       this.legend.classList.add('active');
-    })
+    });
 
     fieldset.appendChild(this.legend);
     fieldset.appendChild(input);
@@ -43,7 +43,7 @@ export class MaterialInput extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, newValue) {
     if (name === 'legend' && oldValue !== newValue) {
-      this.legend.innerHTML = newValue
+      this.legend.innerHTML = newValue;
     }
   }
 }

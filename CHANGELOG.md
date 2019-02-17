@@ -1,3 +1,8 @@
+**0.3.0**
+- Added `eslint` & `eslint-loader` packages.
+- Added `eslint-loader` configuration in `webpack.config.js`.
+- Automatically linted files that were not syntactically correct following the `.eslintrc.js` configuration.
+
 **0.2.0**
 - Added a README for the developpers' documentation.
 - Changed the old `name` property in the `package.json` file for `@aminnairi/material-design`.
