@@ -1,21 +1,21 @@
-"use strict";
+'use strict';
 
-import css from "../sass/components/chip.sass";
+import css from '../sass/components/chip.sass';
 
 export class MaterialChip extends HTMLElement {
-	constructor() {
-		super();
+  constructor() {
+    super();
 
-		const shadow = this.attachShadow({ mode: "open" });
-		const span = document.createElement("span");
-		const style = document.createElement("style");
+    const shadow = this.attachShadow({ mode: 'open' });
+    const span = document.createElement('span');
+    const style = document.createElement('style');
 
-		span.innerHTML = this.innerHTML;
-		span.classList.add("chip");
+    span.innerHTML = this.innerHTML;
+    span.classList.add('chip');
 
-		style.textContent = css.toString();
+    style.textContent = css.toString();
 
-		shadow.appendChild(style);
-		shadow.appendChild(span);
-	}
+    shadow.appendChild(style);
+    shadow.appendChild(span);
+  }
 }
