@@ -1,3 +1,6 @@
+**0.4.0**
+- Developers documentation is now removed from the `README.md` file. Instead, the developer is asked to use the Wiki page.
+
 **0.3.0**
 - Added `eslint` & `eslint-loader` packages.
 - Added `eslint-loader` configuration in `webpack.config.js`.
