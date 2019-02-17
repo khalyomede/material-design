@@ -4,7 +4,6 @@ about: Suggest an idea for this project
 title: ''	
 labels: enhancement	
 assignees: aminnairi	
-projects: features-requests/2	
 
 ---
 
