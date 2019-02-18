@@ -1,3 +1,6 @@
+**0.6.0**
+- Added an installation section to the documentation.
+
 **0.5.0**
 - The pull request template is now working as intended.
 - The folder `test` has been renamed to `examples`.
