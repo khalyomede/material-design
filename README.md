@@ -6,7 +6,7 @@ JavaScript & CSS implementation of the Material Design using Web Components
 
 ### From NPM
 
-*Comming soon...*
+*Coming soon...*
 
 ### From GitHub
 
@@ -58,7 +58,7 @@ TODO
 
 ### From NPM
 
-*Comming soon...*
+*Coming soon...*
 
 ### From GitHub
 
