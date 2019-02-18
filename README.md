@@ -2,6 +2,18 @@
 
 JavaScript & CSS implementation of the Material Design using Web Components
 
+## Installation
+
+### From NPM
+
+*Comming soon...*
+
+### From GitHub
+
+```console
+$ npm install aminnairi/material-design
+```
+
 ## Usage
 
 ### Chip
@@ -40,6 +52,18 @@ TODO
     <script src='./material-design.js'></script>
   </body>
 </html>
+```
+
+## Uninstallation
+
+### From NPM
+
+*Comming soon...*
+
+### From GitHub
+
+```console
+$ npm uninstall @aminnairi/material-design
 ```
 
 ## Documentation
