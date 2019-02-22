@@ -7,15 +7,26 @@ export class MaterialChip extends HTMLElement {
     super();
 
     const shadow = this.attachShadow({ mode: 'open' });
-    const span = document.createElement('span');
     const style = document.createElement('style');
 
-    span.innerHTML = this.innerHTML;
-    span.classList.add('chip');
+    this.span = document.createElement('span');
+
+    this.span.innerHTML = this.innerHTML;
+    this.span.classList.add('chip');
 
     style.textContent = css.toString();
 
     shadow.appendChild(style);
-    shadow.appendChild(span);
+    shadow.appendChild(this.span);
+  }
+
+  static get observedAttributes() {
+    return ['outlined'];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'outlined' && oldValue !== newValue) {
+      this.span.classList.add('outlined');
+    }
   }
 }
