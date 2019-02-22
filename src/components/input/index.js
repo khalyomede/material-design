@@ -1,6 +1,6 @@
 'use strict';
 
-import css from './input.scss';
+import css from './index.scss';
 
 export class MaterialInput extends HTMLElement {
   constructor() {

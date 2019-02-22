@@ -1,3 +1,12 @@
+**0.6.0**
+- Added an installation section to the documentation.
+
+**0.5.0**
+- The pull request template is now working as intended.
+- The folder `test` has been renamed to `examples`.
+- A new component has been added for the Material icons.
+- Usage documentation has been added to the `README.md` file.
+
 **0.4.0**
 - Developers documentation is now removed from the `README.md` file. Instead, the developer is asked to use the Wiki page.
 

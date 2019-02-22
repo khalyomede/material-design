@@ -1,4 +1,4 @@
-This pull request will close issue #[IDENTIFIER]
+This pull request will close #[IDENTIFIER]
 
 **List of breaking changes:**
 - [x] ...
