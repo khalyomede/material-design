@@ -1,0 +1,15 @@
+@import '../color'
+
+$color-name: 'brown'
+$color-value: map-get($colors, $color-name)
+
+.#{$color-name}
+    color: $color-value
+
+@each $shade-name, $shade-ratio in $light-shade-ratios
+    .#{$color-name}-#{$shade-name}
+        color: lighten($color-value, $shade-ratio)
+
+@each $shade-name, $shade-ratio in $dark-shade-ratios
+    .#{$color-name}-#{$shade-name}
+        color: lighten($color-value, $shade-ratio)

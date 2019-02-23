@@ -1,0 +1,18 @@
+@import '../color'
+
+$color-name: 'yellow'
+$color-value: map-get($colors, $color-name)
+
+.#{$color-name}-background
+    background-color: $color-value
+
+@each $shade-name, $shade-ratio in $light-shade-ratios
+    .#{$color-name}-#{$shade-name}-background
+        background-color: lighten($color-value, $shade-ratio)
+
+@each $shade-name, $shade-ratio in $dark-shade-ratios
+    .#{$color-name}-#{$shade-name}-background
+        background-color: darken($color-value, $shade-ratio)
+
+        @if $shade-name in $dark-shade-names
+            color: white
