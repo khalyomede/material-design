@@ -1,6 +1,6 @@
 'use strict';
 
-import css from '../sass/components/chip.sass';
+import css from './index.sass';
 
 export class MaterialChip extends HTMLElement {
   constructor() {
